@@ -12,6 +12,10 @@ import AddCourse from './pages/educator/AddCourse'
 import MyCourses from './pages/educator/MyCourses'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
+import About from './pages/common/About'
+import Services from './pages/common/Services'
+import Projects from './pages/common/Projects'
+import Contact from './pages/common/Contact'
 
 function App() {
   const isEducatorRoute = useMatch('/educator/*')
@@ -20,6 +24,12 @@ function App() {
       {!isEducatorRoute && <Navbar/>}
       
       <Routes>
+        
+        {/* ===== Public / Common Routes ===== */}
+         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
          
         
         <Route path='/' element={<Home />} />
@@ -29,6 +39,8 @@ function App() {
         <Route path='/my-enrollments' element={<MyEnrollments />} />
         <Route path='/player/:courseId' element={<Player />} />
         <Route path='/loading/:path' element={<Loading />} />
+
+
         <Route path='/educator' element={<Educator />}>
           <Route path='educator' element={<Dashboard />} />
           <Route path='add-course' element={<AddCourse />} />

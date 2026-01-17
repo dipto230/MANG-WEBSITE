@@ -44,6 +44,15 @@ import profile_img3 from './profile_img3.png'
 import lesson_icon from './lesson_icon.svg'
 
 import logo_mang from './ICON_Mang.svg'
+import Hero_photo from './Meaningful Photos.jpg'
+import cannon_icon from './canon-2.svg'
+import fujifilm_logo from './fujifilm-logo.svg'
+import davinci_logo from './davinci-resolve-12.svg'
+import adobe_logo_2 from './adobe-2.svg'
+import premiere_logo from './premiere-pro-cc.svg'
+import Nikon_logo from './nikon-2.svg'
+import light_room_logo from './lightroom-cc.svg'
+import adobe_logo_3 from './adobe-illustrator-cc-3.svg'
 
 
 export const assets = {
@@ -91,7 +100,20 @@ export const assets = {
     play_icon,
     blue_tick_icon,
     lesson_icon,
-    logo_mang
+    logo_mang,
+    Hero_photo,
+    cannon_icon,
+    fujifilm_logo,
+    davinci_logo,
+    adobe_logo_2,
+    premiere_logo,
+    Nikon_logo,
+    light_room_logo,
+    adobe_logo_3
+
+
+
+
 }
 
 export const dummyEducatorData = {
