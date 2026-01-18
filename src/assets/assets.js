@@ -240,7 +240,7 @@ export const dummyCourses = [
     {
         "_id": "605c72efb3f1c2b1f8e4e1a1",
         "courseTitle": "Introduction to JavaScript",
-        "courseDescription": "<h2>Learn the Basics of JavaScript</h2><p>JavaScript is a versatile programming language that powers the web. In this course, you will learn the fundamentals of JavaScript, including syntax, data types, and control structures.</p><p>This course is perfect for beginners who want to start their journey in web development. By the end of this course, you will be able to create interactive web pages and understand the core concepts of JavaScript.</p><ul><li>Understand the basics of programming</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>",
+        "courseDescription": "<h2>Learn the Basics of Videography</h2><p>Videography is the art of capturing moving visuals to tell compelling stories. In this course, you will learn the fundamentals of videography, including camera movement, framing, lighting, and audio basics.</p><p>This course is perfect for beginners who want to start creating professional-looking videos for content creation, filmmaking, or personal projects. By the end of this course, you will be able to shoot smooth, well-framed videos with confidence.</p><ul><li>Understand video cameras and settings</li><li>Learn framing, movement, and lighting</li><li>Record high-quality videos for different scenarios</li></ul>",
         "coursePrice": 49.99,
         "isPublished": true,
         "discount": 20,
@@ -248,11 +248,11 @@ export const dummyCourses = [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
-                "chapterTitle": "Getting Started with JavaScript",
+                "chapterTitle": "Videography Fundamentals for Beginners",
                 "chapterContent": [
                     {
                         "lectureId": "lecture1",
-                        "lectureTitle": "What is JavaScript?",
+                        "lectureTitle": "Photography Fundamentals for Beginners",
                         "lectureDuration": 16,
                         "lectureUrl": "https://youtu.be/CBWnBi-awSA",
                         "isPreviewFree": true,
@@ -308,12 +308,13 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T04:47:44.701Z",
         "__v": 4,
-        "courseThumbnail": "https://img.youtube.com/vi/CBWnBi-awSA/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/zVpCxgJK/people-looking-together-camera.jpg"
     },
     {
         "_id": "675ac1512100b91a6d9b8b24",
-        "courseTitle": "Advanced Python Programming",
-        "courseDescription": "<h2>Deep Dive into Python Programming</h2><p>This course is designed for those who have a basic understanding of Python and want to take their skills to the next level. You will explore advanced topics such as decorators, generators, and context managers.</p><p>By the end of this course, you will be able to write efficient and clean Python code, and understand how to leverage Python's powerful features for real-world applications.</p><ul><li>Master advanced data structures</li><li>Implement object-oriented programming concepts</li><li>Work with libraries and frameworks</li></ul>",
+        "courseTitle": "Introduction to Digital Photography",
+        "courseDescription": "<h2>Learn the Basics of Photography</h2><p>Photography is the art of capturing moments through light, composition, and creativity. In this course, you will learn the fundamentals of photography, including camera settings, lighting techniques, and composition rules.</p><p>This course is ideal for beginners who want to explore photography as a hobby or profession. By the end of this course, you will be able to take well-composed photos and understand how to use your camera effectively.</p><ul><li>Understand camera types and basic settings</li><li>Learn composition and lighting techniques</li><li>Capture stunning photos in different environments</li></ul>",
+         
         "coursePrice": 79.99,
         "isPublished": true,
         "discount": 15,
@@ -321,11 +322,11 @@ export const dummyCourses = [
             {
                 "chapterId": "chapter1",
                 "chapterOrder": 1,
-                "chapterTitle": "Advanced Data Structures",
+                "chapterTitle": "Mastering the Art of Photography",
                 "chapterContent": [
                     {
                         "lectureId": " lecture1",
-                        "lectureTitle": "Lists and Tuples",
+                        "lectureTitle": "Capture the Moment",
                         "lectureDuration": 720,
                         "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
                         "isPreviewFree": true,
@@ -333,7 +334,7 @@ export const dummyCourses = [
                     },
                     {
                         "lectureId": "lecture2",
-                        "lectureTitle": "Dictionaries and Sets",
+                        "lectureTitle": "Fundamentals of Photography and Visual Storytelling",
                         "lectureDuration": 850,
                         "lectureUrl": "https://youtu.be/HdLIMoQkXFA",
                         "isPreviewFree": false,
@@ -344,7 +345,7 @@ export const dummyCourses = [
             {
                 "chapterId": "chapter2",
                 "chapterOrder": 2,
-                "chapterTitle": "Object-Oriented Programming",
+                "chapterTitle": "From Lens to Life",
                 "chapterContent": [
                     {
                         "lectureId": "lecture3",
@@ -380,7 +381,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:47:54.446Z",
         "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/HdLIMoQkXFA/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/TxCXGHV1/video-maker-editing-montage-clips-coloring-software-mockup.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ae",
@@ -446,7 +447,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-27T11:30:00.000Z",
         "updatedAt": "2024-12-31T04:14:49.773Z",
         "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/jZFaMEqEqEQ/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/27hgDj2F/collage-about-movie-time-with-hands-holding-camera.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1a7",
@@ -512,7 +513,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:31:27.290Z",
         "__v": 2,
-        "courseThumbnail": "https://img.youtube.com/vi/lpx2zFkapIk/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/MyzNz25h/kyle-loftus-5-MUw-NHo5i4-unsplash.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ac",
@@ -577,7 +578,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:32:55.357Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/0yboGn8errU/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/M5DcZ68v/jakob-owens-so93-Gwx-Yr8s-unsplash.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ad",
@@ -650,7 +651,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-27T10:00:00.000Z",
         "updatedAt": "2024-12-31T09:57:48.992Z",
         "__v": 3,
-        "courseThumbnail": "https://img.youtube.com/vi/E4znbZgUWzA/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/4ZSfrPyf/keagan-henman-p-Px-JTtxf-V1-A-unsplash.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1aa",
@@ -715,7 +716,7 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:53:59.753Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/631lFJdQvoo/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/qLbvTLrr/jakob-owens-Ci-UR8z-ISX60-unsplash.jpg"
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ab",
@@ -780,6 +781,6 @@ export const dummyCourses = [
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:56:13.208Z",
         "__v": 1,
-        "courseThumbnail": "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg"
+        "courseThumbnail": "https://i.ibb.co/kVpYtvxk/kyle-loftus-3-Uc-Qt-XSv-A88-unsplash.jpg"
     }
 ]
