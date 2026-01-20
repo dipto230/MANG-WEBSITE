@@ -1,13 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { assets } from '../../assets/assets'
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
+import { AppContext } from '../../context/AppContext'
 
 const Navbar = () => {
   const location = useLocation()
   const isCourseListPage = location.pathname.includes('/course-list')
   const { openSignIn } = useClerk()
   const { user } = useUser()
+
+  const {navigate, isEducator} = useContext(AppContext)
 
   const [langOpen, setLangOpen] = useState(false)
   const [language, setLanguage] = useState('Eng')
@@ -62,6 +65,7 @@ const Navbar = () => {
           
           {/* Logo */}
           <img
+            onClick={()=>navigate('/')}
             src={assets.logo_mang}
             alt="logo"
             className="w-16 cursor-pointer"
@@ -88,8 +92,8 @@ const Navbar = () => {
                 <Link to="/my-enrollments" className="hover:text-black">
                   My Enrollments
                 </Link>
-                <button className="hover:text-black">
-                  Become Educator
+                <button onClick={()=>{navigate('/educator')}} className="hover:text-black">
+                  {isEducator ? 'Educator Dashboard' :'Become Educator'}
                 </button>
               </>
             )}
