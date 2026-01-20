@@ -5,6 +5,7 @@ import CoursesSection from '../../components/student/CoursesSection'
 import TestimonialsSection from '../../components/student/TestimonialsSection'
 import CallToAction from '../../components/student/callToAction'
  import ProjectsSection from '../common/ProjectsSection'
+import ServicesPreview from '../common/ServicesPreview'
 
 
 
@@ -16,8 +17,8 @@ const Home = () => {
       <CoursesSection />
       <ProjectsSection/>
       <TestimonialsSection />
-
-      <CallToAction/>
+      <ServicesPreview/>
+<CallToAction/>
     </div>
   )
 }

@@ -821,4 +821,46 @@ export const dummyProjects = [
     liveLink: "#",
     githubLink: "#",
   },
+]
+export const dummyServices = [
+  {
+    id: "s1",
+    title: "Video Editing",
+    shortDesc: "Professional video editing for reels, ads, and films.",
+    fullDesc:
+      "I provide high-quality video editing services including cinematic cuts, color grading, motion graphics, sound design, and platform-optimized exports for YouTube, Instagram, and ads.",
+    image: assets.service_video,
+  },
+  {
+    id: "s2",
+    title: "Graphic Design",
+    shortDesc: "Creative visuals that communicate your brand.",
+    fullDesc:
+      "From logos and branding to social media creatives, posters, and thumbnails, I design visuals that align with your brand identity and marketing goals.",
+    image: assets.service_graphic,
+  },
+  {
+    id: "s3",
+    title: "Web Development",
+    shortDesc: "Modern, fast, and scalable websites.",
+    fullDesc:
+      "I build responsive and performant websites using React, Next.js, and modern backend technologies with clean UI, optimized SEO, and smooth UX.",
+    image: assets.service_web,
+  },
+  {
+    id: "s4",
+    title: "Digital Marketing",
+    shortDesc: "Grow your brand with smart marketing.",
+    fullDesc:
+      "I help businesses grow through SEO, social media marketing, paid ads, analytics, and content strategy focused on real conversions.",
+    image: assets.service_marketing,
+  },
+  {
+    id: "s5",
+    title: "Photography",
+    shortDesc: "Capturing moments with storytelling.",
+    fullDesc:
+      "Professional photography services including portraits, events, product shoots, and creative concepts with high-quality editing.",
+    image: assets.service_photo,
+  },
 ];
