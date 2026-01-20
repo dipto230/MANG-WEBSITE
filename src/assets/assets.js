@@ -784,3 +784,41 @@ export const dummyCourses = [
         "courseThumbnail": "https://i.ibb.co/kVpYtvxk/kyle-loftus-3-Uc-Qt-XSv-A88-unsplash.jpg"
     }
 ]
+export const dummyProjects = [
+  {
+    id: "p1",
+    title: "E-Learning Platform",
+    description: "Online learning platform with courses, enrollments and video player.",
+    image: assets.course_1_thumbnail,
+    tech: ["React", "Node", "MongoDB"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    id: "p2",
+    title: "Expense Tracker",
+    description: "Track income and expenses with charts and analytics.",
+    image: assets.course_2_thumbnail,
+    tech: ["MERN", "Chart.js"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    id: "p3",
+    title: "Portfolio Website",
+    description: "Personal portfolio website with projects and contact form.",
+    image: assets.course_3_thumbnail,
+    tech: ["React", "Tailwind"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+  {
+    id: "p4",
+    title: "Blog Platform",
+    description: "Full-stack blog app with authentication and comments.",
+    image: assets.course_4_thumbnail,
+    tech: ["Next.js", "MongoDB"],
+    liveLink: "#",
+    githubLink: "#",
+  },
+];
