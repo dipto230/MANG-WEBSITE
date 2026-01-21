@@ -1,11 +1,11 @@
 import React from "react";
-import { dummyServices } from "../../assets/assets"; // adjust path if needed
+import { dummyServices } from "../../assets/assets";
 
 const Services = () => {
   return (
     <>
-      {/* ===== YOUR EXISTING TYPOGRAPHY SECTION (UNCHANGED) ===== */}
-      <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+      {/* ===== TYPOGRAPHY SECTION (UNCHANGED) ===== */}
+      <div className="relative min-h-[calc(100vh-96px)] w-full flex items-center justify-center overflow-hidden">
         <div className="relative w-full max-w-7xl h-[80vh] flex items-center justify-center">
 
           <h1 className="absolute left-[22%] top-[20%] text-[110px] font-extrabold">
@@ -42,9 +42,9 @@ const Services = () => {
         </div>
       </div>
 
-      {/* ===== HORIZONTAL SERVICES SECTION ===== */}
-      <section className="w-full bg-white py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12">
+      {/* ===== PROFESSIONAL HORIZONTAL SERVICES SECTION ===== */}
+      <section className="-mt-24 w-full bg-white px-6 md:px-12">
+        <div className="max-w-7xl mx-auto flex flex-col gap-8">
           {dummyServices.map((service, index) => (
             <div
               key={service.id}
@@ -57,13 +57,13 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-auto rounded-xl object-cover"
+                  className="w-full h-[350px] object-cover rounded-xl"
                 />
               </div>
 
               {/* Text */}
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">{service.title}</h3>
                 <p className="text-gray-600 mb-2">{service.shortDesc}</p>
                 <p className="text-gray-500">{service.fullDesc}</p>
               </div>

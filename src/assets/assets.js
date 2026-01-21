@@ -54,6 +54,8 @@ import Nikon_logo from './nikon-2.svg'
 import light_room_logo from './lightroom-cc.svg'
 import adobe_logo_3 from './adobe-illustrator-cc-3.svg'
 
+import graphic_design from './woman-with-editor-occupation-wearing-headphones.jpg'
+
 
 export const assets = {
     logo,
@@ -109,7 +111,8 @@ export const assets = {
     premiere_logo,
     Nikon_logo,
     light_room_logo,
-    adobe_logo_3
+    adobe_logo_3,
+    graphic_design
 
 
 
@@ -829,7 +832,7 @@ export const dummyServices = [
     shortDesc: "Professional video editing for reels, ads, and films.",
     fullDesc:
       "I provide high-quality video editing services including cinematic cuts, color grading, motion graphics, sound design, and platform-optimized exports for YouTube, Instagram, and ads.",
-    image: assets.service_video,
+    image: "https://i.ibb.co/LXGzVRDy/sanjeev-nagaraj-u4bv-BOOp-ZB4-unsplash.jpg",
   },
   {
     id: "s2",
@@ -837,7 +840,7 @@ export const dummyServices = [
     shortDesc: "Creative visuals that communicate your brand.",
     fullDesc:
       "From logos and branding to social media creatives, posters, and thumbnails, I design visuals that align with your brand identity and marketing goals.",
-    image: assets.service_graphic,
+    image: assets.graphic_design
   },
   {
     id: "s3",
