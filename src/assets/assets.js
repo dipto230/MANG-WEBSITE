@@ -53,6 +53,7 @@ import premiere_logo from './premiere-pro-cc.svg'
 import Nikon_logo from './nikon-2.svg'
 import light_room_logo from './lightroom-cc.svg'
 import adobe_logo_3 from './adobe-illustrator-cc-3.svg'
+import web_dev_3 from './it-specialist-checking-code-computer-dark-office-night.jpg'
 
 import graphic_design from './woman-with-editor-occupation-wearing-headphones.jpg'
 
@@ -112,7 +113,8 @@ export const assets = {
     Nikon_logo,
     light_room_logo,
     adobe_logo_3,
-    graphic_design
+    graphic_design,
+    web_dev_3
 
 
 
@@ -848,22 +850,22 @@ export const dummyServices = [
     shortDesc: "Modern, fast, and scalable websites.",
     fullDesc:
       "I build responsive and performant websites using React, Next.js, and modern backend technologies with clean UI, optimized SEO, and smooth UX.",
-    image: assets.service_web,
+    image: assets.web_dev_3,
   },
-  {
-    id: "s4",
-    title: "Digital Marketing",
-    shortDesc: "Grow your brand with smart marketing.",
-    fullDesc:
-      "I help businesses grow through SEO, social media marketing, paid ads, analytics, and content strategy focused on real conversions.",
-    image: assets.service_marketing,
-  },
-  {
-    id: "s5",
-    title: "Photography",
-    shortDesc: "Capturing moments with storytelling.",
-    fullDesc:
-      "Professional photography services including portraits, events, product shoots, and creative concepts with high-quality editing.",
-    image: assets.service_photo,
-  },
+//   {
+//     id: "s4",
+//     title: "Digital Marketing",
+//     shortDesc: "Grow your brand with smart marketing.",
+//     fullDesc:
+//       "I help businesses grow through SEO, social media marketing, paid ads, analytics, and content strategy focused on real conversions.",
+//     image: assets.service_marketing,
+//   },
+//   {
+//     id: "s5",
+//     title: "Photography",
+//     shortDesc: "Capturing moments with storytelling.",
+//     fullDesc:
+//       "Professional photography services including portraits, events, product shoots, and creative concepts with high-quality editing.",
+//     image: assets.service_photo,
+//   },
 ];

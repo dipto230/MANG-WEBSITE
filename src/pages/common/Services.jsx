@@ -4,7 +4,7 @@ import { dummyServices } from "../../assets/assets";
 const Services = () => {
   return (
     <>
-      {/* ===== TYPOGRAPHY SECTION (UNCHANGED) ===== */}
+      {/* ===== TYPOGRAPHY SECTION (UNCHANGED — DO NOT TOUCH) ===== */}
       <div className="relative min-h-[calc(100vh-96px)] w-full flex items-center justify-center overflow-hidden">
         <div className="relative w-full max-w-7xl h-[80vh] flex items-center justify-center">
 
@@ -42,33 +42,55 @@ const Services = () => {
         </div>
       </div>
 
-      {/* ===== PROFESSIONAL HORIZONTAL SERVICES SECTION ===== */}
-      <section className="-mt-24 w-full bg-white px-6 md:px-12">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8">
-          {dummyServices.map((service, index) => (
-            <div
-              key={service.id}
-              className={`flex flex-col md:flex-row items-center gap-6 ${
-                index % 2 === 1 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Image */}
-              <div className="md:w-1/2 flex-shrink-0">
+      {/* ===== SERVICES SECTION (M SHAPE CARDS) ===== */}
+      <section className="-mt-24 w-full px-6 md:px-12 py-32">
+        <div className="max-w-7xl mx-auto">
+
+          {/* TOP ROW (2 CARDS) */}
+          <div className="grid md:grid-cols-2 gap-20">
+            {dummyServices.slice(0, 2).map((service) => (
+              <div
+                key={service.id}
+                className="rounded-3xl overflow-hidden bg-white shadow-md"
+              >
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-[350px] object-cover rounded-xl"
+                  className="w-full h-[300px] object-cover"
                 />
-              </div>
 
-              {/* Text */}
-              <div className="md:w-1/2">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-600 mb-2">{service.shortDesc}</p>
-                <p className="text-gray-500">{service.fullDesc}</p>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    {service.shortDesc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* BOTTOM CENTER CARD (LOWER — M VALLEY) */}
+          <div className="mt-36 flex justify-center">
+            <div className="w-full md:w-[52%] rounded-3xl overflow-hidden bg-white shadow-md">
+              <img
+                src={dummyServices[2].image}
+                alt={dummyServices[2].title}
+                className="w-full h-[340px] object-cover"
+              />
+
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold mb-2">
+                  {dummyServices[2].title}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {dummyServices[2].shortDesc}
+                </p>
               </div>
             </div>
-          ))}
+          </div>
+
         </div>
       </section>
     </>

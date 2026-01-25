@@ -9,6 +9,7 @@ import ServicesPreview from '../common/ServicesPreview'
 import Footer from '../../components/student/Footer'
 import LegacyInquirySection from '../common/LegacyInquirySection'
 import AboutPreview from '../common/AboutPreview'
+import ContactPreview from '../common/ContactPreview'
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
       <LegacyInquirySection />
       <AboutPreview/>
       <CallToAction />
+      <ContactPreview/>
       <Footer/>
     </div>
   )
