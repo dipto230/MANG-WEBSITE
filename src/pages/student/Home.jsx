@@ -7,6 +7,7 @@ import CallToAction from '../../components/student/callToAction'
  import ProjectsSection from '../common/ProjectsSection'
 import ServicesPreview from '../common/ServicesPreview'
 import Footer from '../../components/student/Footer'
+import LegacyInquirySection from '../common/LegacyInquirySection'
 
 
 
@@ -18,7 +19,8 @@ const Home = () => {
       <CoursesSection />
       <ProjectsSection/>
       <TestimonialsSection />
-      <ServicesPreview/>
+      <ServicesPreview />
+      <LegacyInquirySection/>
       <CallToAction />
       <Footer/>
     </div>
