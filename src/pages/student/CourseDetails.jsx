@@ -112,8 +112,29 @@ const CourseDetails = () => {
       </div>
 
       {/* RIGHT COLUMN (future content like price, enroll button, etc.) */}
-      <div className="w-full md:w-80 bg-white shadow-lg rounded-xl p-5">
-        <p className="text-lg font-semibold">Course Info</p>
+      <div className="w-full md:w-[500px] z-10 shadow-custom-card rounded bg-white">
+        <img src={courseData.courseThumbnail} alt=""
+          className="w-full h-[180px] object-cover"
+        />
+        <div className="pt-5">
+          <div className="flex items-center gap-2">
+            <img className="w-3.5" src={assets.time_left_clock_icon} alt="time left clock icon" />
+            <p className="text-red-500"><span className="font-medium">5 days</span>left at this price!</p>
+          </div>
+          <div className="flex gap-3 items-center pt-2">
+            <p className="text-gray-800 md:text-4xl text-2xl font-semibold">{(courseData.coursePrice - courseData.discount * courseData.coursePrice / 100).toFixed(2)}</p>
+            <p className="md:text-lg text-gray-500 line-through">{courseData.coursePrice}</p>
+            <p className="md:text-lg text-gray-500">{courseData.discount}% off</p>
+          </div>
+          <div className="flex items-center text-sm md:text-default gap-4 pt-2 md:pt-4 text-gray-500 ">
+            <div className="flex items-center gap-1">
+              <img src={assets.star} alt="star icon" />
+              <p>{calculateRating(courseData) }</p>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </div>
   );
