@@ -16,6 +16,7 @@ import About from './pages/common/About'
 import Services from './pages/common/Services'
 import Projects from './pages/common/Projects'
 import Contact from './pages/common/Contact'
+import "quill/dist/quill.snow.css"
 
 function App() {
   const isEducatorRoute = useMatch('/educator/*')
