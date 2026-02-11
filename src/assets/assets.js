@@ -58,7 +58,16 @@ import web_dev_3 from './it-specialist-checking-code-computer-dark-office-night.
 import graphic_design from './woman-with-editor-occupation-wearing-headphones.jpg'
 
 
+
+//manguu product
+
+import mang_jersey from './MANG_JERSEY.jpg'
+import barcelon_jersey from './barcelona-jersey.jpg'
+
+
 export const assets = {
+    barcelon_jersey,
+    mang_jersey,
     logo,
     search_icon,
     sketch,

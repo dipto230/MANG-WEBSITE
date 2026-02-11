@@ -10,6 +10,7 @@ import Footer from '../../components/student/Footer'
 import LegacyInquirySection from '../common/LegacyInquirySection'
 import AboutPreview from '../common/AboutPreview'
 import ContactPreview from '../common/ContactPreview'
+import Store from '../store/Store'
 
 
 
@@ -18,12 +19,15 @@ const Home = () => {
     <div className='flex flex-col items-center space-y-7 text-center'>
       <Hero />
       <Companies />
+      <Store/>
       <CoursesSection />
       <ProjectsSection/>
       <TestimonialsSection />
       <ServicesPreview />
+
       <LegacyInquirySection />
-      <AboutPreview/>
+      <AboutPreview />
+      
       <CallToAction />
       <ContactPreview/>
       <Footer/>

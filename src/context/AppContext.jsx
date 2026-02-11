@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { dummyCourses } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import humanizeDuration from "humanize-duration";
+import { dummyProducts } from "../data/products";
 
 export const AppContext = createContext();
 
@@ -11,6 +12,38 @@ export const AppContextProvider = (props) => {
   const [allCourses, setAllCourses] = useState([])
   const [isEducator, setIsEducator] = useState(true)
   const [enrolledCourse, setEnrolledCourse] = useState([])
+
+
+
+  const [products, setProducts] = useState(dummyProducts || []);
+
+  // ADD PRODUCT
+const addProduct = (product) => {
+  setProducts((prev) => [
+    ...prev,
+    { ...product, id: Date.now() }
+  ]);
+};
+
+// DELETE PRODUCT
+const deleteProduct = (id) => {
+  setProducts((prev) =>
+    prev.filter((item) => item.id !== id)
+  );
+};
+
+// UPDATE PRODUCT
+const updateProduct = (updatedProduct) => {
+  setProducts((prev) =>
+    prev.map((item) =>
+      item.id === updatedProduct.id
+        ? updatedProduct
+        : item
+    )
+  );
+};
+
+
   
   //fetch all course
   const fetchAllCourses = async () => {
@@ -63,7 +96,7 @@ const calculateNoOfLectures = (course) => {
     fetchUserEnrolledCourses()
   },[])
   const value = {
-    currency,allCourses,navigate, calculateRating, isEducator, setIsEducator, calculateNoOfLectures, calculateCourseDuration, calculateChapterTime, enrolledCourse, fetchUserEnrolledCourses
+    currency,allCourses,navigate, calculateRating, isEducator, setIsEducator, calculateNoOfLectures, calculateCourseDuration, calculateChapterTime, enrolledCourse, fetchUserEnrolledCourses,products,addProduct,deleteProduct,updateProduct
   };
 
   return (
