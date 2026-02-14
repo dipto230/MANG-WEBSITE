@@ -1,29 +1,10 @@
 // src/components/common/ProjectsSection.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { dummyProjects } from "../../assets/assets";
 
 const ProjectsSection = () => {
   const navigate = useNavigate();
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const { data } = await axios.get(
-          "http://localhost:5000/api/project/all"
-        );
-
-        if (data.success) {
-          setProjects(data.projects);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchProjects();
-  }, []);
 
   return (
     <div className="w-full max-w-6xl px-6">
@@ -32,9 +13,9 @@ const ProjectsSection = () => {
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6 mt-8">
-        {projects.slice(0, 3).map(project => (
+        {dummyProjects.slice(0, 3).map(project => (
           <div
-            key={project._id}
+            key={project.id}
             className="border rounded-xl overflow-hidden hover:shadow-lg transition"
           >
             <img src={project.image} alt={project.title} />

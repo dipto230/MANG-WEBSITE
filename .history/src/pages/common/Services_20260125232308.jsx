@@ -1,30 +1,10 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import { dummyServices } from "../../assets/assets";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    const fetchServices = async () => {
-      try {
-        const { data } = await axios.get(
-          "http://localhost:5000/api/service/all"
-        );
-
-        if (data.success) {
-          setServices(data.services);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchServices();
-  }, []);
-
   return (
     <>
-      {/* ===== TYPOGRAPHY SECTION (UNCHANGED) ===== */}
+      {/* ===== TYPOGRAPHY SECTION (UNCHANGED — DO NOT TOUCH) ===== */}
       <div className="relative min-h-[calc(100vh-96px)] w-full flex items-center justify-center overflow-hidden">
         <div className="relative w-full max-w-7xl h-[80vh] flex items-center justify-center">
 
@@ -62,15 +42,15 @@ const Services = () => {
         </div>
       </div>
 
-      {/* ===== SERVICES SECTION ===== */}
+      {/* ===== SERVICES SECTION (M SHAPE CARDS) ===== */}
       <section className="-mt-24 w-full px-6 md:px-12 py-32">
         <div className="max-w-7xl mx-auto">
 
-          {/* TOP ROW */}
+          {/* TOP ROW (2 CARDS) */}
           <div className="grid md:grid-cols-2 gap-20">
-            {services.slice(0, 2).map((service) => (
+            {dummyServices.slice(0, 2).map((service) => (
               <div
-                key={service._id}
+                key={service.id}
                 className="rounded-3xl overflow-hidden bg-white shadow-md"
               >
                 <img
@@ -83,35 +63,33 @@ const Services = () => {
                   <h3 className="text-xl font-bold mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-gray-600 whitespace-pre-line">
-                    {service.description.slice(0, 180)}...
+                  <p className="text-sm text-gray-600">
+                    {service.shortDesc}
                   </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* BOTTOM CENTER CARD */}
-          {services[2] && (
-            <div className="mt-36 flex justify-center">
-              <div className="w-full md:w-[52%] rounded-3xl overflow-hidden bg-white shadow-md">
-                <img
-                  src={services[2].image}
-                  alt={services[2].title}
-                  className="w-full h-[340px] object-cover"
-                />
+          {/* BOTTOM CENTER CARD (LOWER — M VALLEY) */}
+          <div className="mt-36 flex justify-center">
+            <div className="w-full md:w-[52%] rounded-3xl overflow-hidden bg-white shadow-md">
+              <img
+                src={dummyServices[2].image}
+                alt={dummyServices[2].title}
+                className="w-full h-[340px] object-cover"
+              />
 
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold mb-2">
-                    {services[2].title}
-                  </h3>
-                  <p className="text-sm text-gray-600 whitespace-pre-line">
-                    {services[2].description.slice(0, 200)}...
-                  </p>
-                </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold mb-2">
+                  {dummyServices[2].title}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {dummyServices[2].shortDesc}
+                </p>
               </div>
             </div>
-          )}
+          </div>
 
         </div>
       </section>

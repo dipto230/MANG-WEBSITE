@@ -1,28 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { dummyServices } from "../../assets/assets";
 
 const ServicesPreview = () => {
   const navigate = useNavigate();
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    const fetchServices = async () => {
-      try {
-        const { data } = await axios.get(
-          "http://localhost:5000/api/service/all"
-        );
-
-        if (data.success) {
-          setServices(data.services);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchServices();
-  }, []);
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-20">
@@ -34,18 +15,16 @@ const ServicesPreview = () => {
       </div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {services.slice(0, 3).map(service => (
+        {dummyServices.slice(0, 3).map(service => (
           <div
-            key={service._id}
+            key={service.id}
             className="border rounded-xl overflow-hidden hover:shadow-lg transition cursor-pointer"
             onClick={() => navigate("/services")}
           >
             <img src={service.image} alt={service.title} />
             <div className="p-4">
               <h3 className="font-semibold text-lg">{service.title}</h3>
-              <p className="text-sm mt-2">
-                {service.description.slice(0, 100)}...
-              </p>
+              <p className="text-sm mt-2">{service.shortDesc}</p>
             </div>
           </div>
         ))}

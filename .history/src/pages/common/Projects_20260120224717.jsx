@@ -1,26 +1,10 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { dummyProjects } from "../../assets/assets";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const { data } = await axios.get(
-          "http://localhost:5000/api/project/all"
-        );
-
-        if (data.success) {
-          setProjects(data.projects);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchProjects();
     setTimeout(() => setVisible(true), 100);
   }, []);
 
@@ -37,12 +21,12 @@ const Projects = () => {
 
       {/* Projects */}
       <div className="space-y-28">
-        {projects.map((project, index) => {
+        {dummyProjects.map((project, index) => {
           const isReverse = index % 2 !== 0;
 
           return (
             <div
-              key={project._id}
+              key={project.id}
               className={`
                 flex flex-col md:flex-row items-center gap-12
                 ${isReverse ? "md:flex-row-reverse" : ""}
@@ -83,16 +67,12 @@ const Projects = () => {
                 <div className="flex gap-6 text-sm font-medium">
                   <a
                     href={project.liveLink}
-                    target="_blank"
-                    rel="noreferrer"
                     className="underline underline-offset-4"
                   >
                     Live Project
                   </a>
                   <a
                     href={project.githubLink}
-                    target="_blank"
-                    rel="noreferrer"
                     className="underline underline-offset-4"
                   >
                     GitHub
