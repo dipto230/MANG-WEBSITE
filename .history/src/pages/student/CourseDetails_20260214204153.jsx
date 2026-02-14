@@ -35,6 +35,7 @@ const CourseDetails = () => {
     const normalizedCourse = {
       courseRatings: [],
       enrolledStudents: [],
+      courseContent: [],
       discount: 0,
       courseDescription: "",
       coursePrice: 0,

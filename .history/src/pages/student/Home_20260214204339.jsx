@@ -11,7 +11,6 @@ import LegacyInquirySection from '../common/LegacyInquirySection'
 import AboutPreview from '../common/AboutPreview'
 import ContactPreview from '../common/ContactPreview'
 import Store from '../store/Store'
-import CallToAction from './../../components/student/CallToAction';
 
 
 
