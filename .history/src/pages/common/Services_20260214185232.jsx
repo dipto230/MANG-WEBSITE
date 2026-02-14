@@ -8,7 +8,7 @@ const Services = () => {
     const fetchServices = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/service/all"
+          "https://mang-website-redeploy.vercel.app/api/service/all"
         );
 
         if (data.success) {

@@ -26,7 +26,7 @@ const AdminDashboard = () => {
     const token = await getToken();
 
     const res = await fetch(
-      "http://localhost:5000/api/admin/stats",
+      "https://mang-website-redeploy.vercel.app/api/admin/stats",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
   ==========================*/
   const fetchProducts = async () => {
     const res = await fetch(
-      "http://localhost:5000/api/products"
+      "https://mang-website-redeploy.vercel.app/api/products"
     );
 
     const data = await res.json();
@@ -70,7 +70,7 @@ const AdminDashboard = () => {
     formData.append("image", image);
 
     const res = await fetch(
-      "http://localhost:5000/api/products/admin/add",
+      "https://mang-website-redeploy.vercel.app/api/products/admin/add",
       {
         method: "POST",
         headers: {

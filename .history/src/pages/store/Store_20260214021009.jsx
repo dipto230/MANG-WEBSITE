@@ -5,7 +5,7 @@ const Store = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://mang-website-redeploy.vercel.app/api/products")
       .then(res => res.json())
       .then(data => setProducts(data.products));
   }, []);

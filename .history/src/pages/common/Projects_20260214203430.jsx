@@ -9,7 +9,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const { data } = await axios.get(
-          "https://mang-website-redeploy.vercel.app/api/project/all"
+          "https://mang-website-redeploy.vercel.app//api/project/all"
         );
 
         if (data.success) {

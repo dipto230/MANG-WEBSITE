@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
     const fetchTestimonials = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/testimonial/all"
+          "https://mang-website-redeploy.vercel.app/api/testimonial/all"
         );
 
         if (data.success) {
