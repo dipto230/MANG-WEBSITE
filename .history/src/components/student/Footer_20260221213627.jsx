@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className='bg-gray-900 md:px-36 text-left w-full mt-10'>
       <div className='flex flex-col md:flex-row items-start px-8 md:px-0 justify-center gap-10 md:gap-32 py-10 border-b border-white/30'>
         <div className='flex flex-col md:items-start items-center w-full'>
-          <img src={assets.new_mookup_logo} alt='logo' className="w-20 md:w-20 object-contain mb-4" />
+          <img src={assets.new_mookup_logo} alt='logo' className="w-30 md:w-48 object-contain mb-4" />
           <p className='mt-6 text-center md:text-left text-sm text-white/80'>From strategic market studies to
               cutting-edge online support, our expertise fuels your growth every
               step of the way.</p>
