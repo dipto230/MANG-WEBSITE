@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -26,20 +24,23 @@ const Services = () => {
 
   return (
     <>
+      {/* ===== TYPOGRAPHY SECTION (UNCHANGED) ===== */}
       {/* ===== TYPOGRAPHY SECTION ===== */}
-      <div className="w-full bg-gray-50 py-32">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Our Services
-          </h1>
+<div className="w-full bg-gray-50 py-32">
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    
+    <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+      Our Services
+    </h1>
 
-          <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            We deliver creative, strategic, and technology-driven solutions
-            designed to help your business grow and stand out in the digital world.
-          </p>
-        </div>
-      </div>
+    <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+      We deliver creative, strategic, and technology-driven solutions 
+      designed to help your business grow and stand out in the digital world.
+    </p>
 
+  </div>
+</div>
+ 
       {/* ===== SERVICES SECTION ===== */}
       <section className="-mt-24 w-full px-6 md:px-12 py-32">
         <div className="max-w-7xl mx-auto">
@@ -49,8 +50,7 @@ const Services = () => {
             {services.slice(0, 2).map((service) => (
               <div
                 key={service._id}
-                onClick={() => navigate(`/service/${service._id}`)}
-                className="rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer hover:shadow-xl transition duration-300"
+                className="rounded-3xl overflow-hidden bg-white shadow-md"
               >
                 <img
                   src={service.image}
@@ -73,10 +73,7 @@ const Services = () => {
           {/* BOTTOM CENTER CARD */}
           {services[2] && (
             <div className="mt-36 flex justify-center">
-              <div
-                onClick={() => navigate(`/service/${services[2]._id}`)}
-                className="w-full md:w-[52%] rounded-3xl overflow-hidden bg-white shadow-md cursor-pointer hover:shadow-xl transition duration-300"
-              >
+              <div className="w-full md:w-[52%] rounded-3xl overflow-hidden bg-white shadow-md">
                 <img
                   src={services[2].image}
                   alt={services[2].title}

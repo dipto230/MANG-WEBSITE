@@ -112,7 +112,7 @@ const Navbar = () => {
             <Link to="/services" className="hover:text-black">Service</Link>
             <Link to="/projects" className="hover:text-black">Projects</Link>
             <Link to="/contact" className="hover:text-black">Contact</Link>
-            <Link to="/store" className="hover:text-black">Store</Link>
+            
 
             {user && (
               <>

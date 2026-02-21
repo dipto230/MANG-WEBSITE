@@ -67,12 +67,11 @@ import new_mookup_logo from './new moukup logo (1).png'
 import mang_jersey from './MANG_JERSEY.jpg'
 import barcelon_jersey from './barcelona-jersey.jpg'
 
-import mnm from './mnm-3 (1).png'
+import mnm from 
 
 
 export const assets = {
     barcelon_jersey,
-    mnm,
     new_mookup_logo,
     mang_jersey,
     logo,

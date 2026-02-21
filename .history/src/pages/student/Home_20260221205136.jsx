@@ -20,13 +20,12 @@ const Home = () => {
     <div className='flex flex-col items-center space-y-7 text-center'>
       <Hero />
       <Companies />
-      <ServicesPreview />
      <ProjectsSection />
       <CoursesSection />
       
        <Store/>
       <TestimonialsSection />
-      
+      <ServicesPreview />
 
       <LegacyInquirySection />
       <AboutPreview />

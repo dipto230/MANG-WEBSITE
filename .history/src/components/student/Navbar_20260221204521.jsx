@@ -92,7 +92,7 @@ const Navbar = () => {
           />
 
           {/* Search (controlled width) */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:block">
             <input
               type="text"
               placeholder="Search courses..."
@@ -100,7 +100,7 @@ const Navbar = () => {
             />
              <img
     onClick={() => navigate('/')}
-    src={assets.mnm}
+    src={assets}
     alt="home"
     className="w-10 cursor-pointer"
   />
@@ -112,7 +112,6 @@ const Navbar = () => {
             <Link to="/services" className="hover:text-black">Service</Link>
             <Link to="/projects" className="hover:text-black">Projects</Link>
             <Link to="/contact" className="hover:text-black">Contact</Link>
-            <Link to="/store" className="hover:text-black">Store</Link>
 
             {user && (
               <>

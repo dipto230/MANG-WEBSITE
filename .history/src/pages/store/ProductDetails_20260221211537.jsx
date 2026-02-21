@@ -21,7 +21,7 @@ useEffect(() => {
       }
 
       const data = await res.json();
-      setProduct(data.product);
+      setProduct(data.data);
     } catch (err) {
       setError(err.message);
     } finally {

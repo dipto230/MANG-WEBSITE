@@ -58,7 +58,7 @@ import web_dev_3 from './it-specialist-checking-code-computer-dark-office-night.
 import graphic_design from './woman-with-editor-occupation-wearing-headphones.jpg'
 
 import new_mookup_logo from './new moukup logo (1).png'
-
+import mnm-3 from './'
 
 
 
@@ -67,12 +67,9 @@ import new_mookup_logo from './new moukup logo (1).png'
 import mang_jersey from './MANG_JERSEY.jpg'
 import barcelon_jersey from './barcelona-jersey.jpg'
 
-import mnm from './mnm-3 (1).png'
-
 
 export const assets = {
     barcelon_jersey,
-    mnm,
     new_mookup_logo,
     mang_jersey,
     logo,

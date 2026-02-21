@@ -72,7 +72,6 @@ import mnm from './mnm-3 (1).png'
 
 export const assets = {
     barcelon_jersey,
-    mnm,
     new_mookup_logo,
     mang_jersey,
     logo,

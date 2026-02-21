@@ -13,7 +13,7 @@ useEffect(() => {
   const fetchProduct = async () => {
     try {
       const res = await fetch(
-        `https://mang-website-redeploy.vercel.app/api/products/${id}`
+        ` `https://mang-website-redeploy.vercel.app/api/products/${id}`
       );
 
       if (!res.ok) {
@@ -21,7 +21,7 @@ useEffect(() => {
       }
 
       const data = await res.json();
-      setProduct(data.product);
+      setProduct(data.data);
     } catch (err) {
       setError(err.message);
     } finally {
