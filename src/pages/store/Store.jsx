@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../../components/store/ProductCard";
+import Footer from "../../components/student/Footer";
 
 const Store = () => {
   const [products, setProducts] = useState([]);
@@ -18,8 +19,12 @@ const Store = () => {
           <ProductCard key={product._id} product={product} />
         ))}
       </div>
+      
     </div>
+     
+
   );
+
 };
 
 export default Store;

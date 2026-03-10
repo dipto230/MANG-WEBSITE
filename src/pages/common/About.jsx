@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/student/Footer";
 
 const About = () => {
   return (
@@ -62,7 +63,11 @@ const About = () => {
           ))}
         </div>
       </div>
+      <div className="mt-5">
+         <Footer/>
+        </div>
     </section>
+ 
   );
 };
 

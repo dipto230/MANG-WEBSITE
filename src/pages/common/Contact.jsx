@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/student/Footer";
 
 const Contact = () => {
   return (
@@ -17,9 +18,9 @@ const Contact = () => {
           </p>
 
           <div className="mt-10 space-y-4 text-gray-700">
-            <p><strong>Email:</strong> hello@manguiu.com</p>
-            <p><strong>Phone:</strong> +91 90000 00000</p>
-            <p><strong>Location:</strong> Remote · Worldwide</p>
+            <p><strong>Email:</strong>info@manguuu.com</p>
+            <p><strong>Phone:</strong>+91 8849501736</p>
+            <p><strong>Location:</strong>Thanchi,Bandarban</p>
           </div>
         </div>
 
@@ -47,6 +48,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };

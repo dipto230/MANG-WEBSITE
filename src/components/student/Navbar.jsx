@@ -68,12 +68,12 @@ className="w-16 cursor-pointer"
 
 <Link to="/about" className="hover:text-black">About</Link>
 <Link to="/services" className="hover:text-black">Services</Link>
-<Link
+{/* <Link
   to="/portfolio"
   className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-md hover:scale-105 hover:shadow-lg transition"
 >
   Portfolio
-</Link>
+</Link> */}
 <Link to="/projects" className="hover:text-black">Projects</Link>
 <Link to="/pricing" className="hover:text-black">Pricing</Link>
 <Link to="/store" className="hover:text-black">Store</Link>
