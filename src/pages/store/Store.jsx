@@ -22,7 +22,7 @@ const Store = () => {
       </div>
       
       </div>
-      <Footer/>
+     
       </>
      
 
