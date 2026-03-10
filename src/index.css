@@ -67,3 +67,35 @@
     0 0 16px rgba(0,0,0,0.3),
     0 0 25px rgba(0,0,0,0.4);
 }
+
+
+
+@keyframes servicesScroll {
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.animate-services-scroll{
+  animation:servicesScroll 35s linear infinite;
+}
+
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-scroll {
+  display: flex;
+  width: max-content;
+  animation: logoScroll 25s linear infinite;
+}

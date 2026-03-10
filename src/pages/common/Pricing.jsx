@@ -116,7 +116,7 @@ features:[
 }
 ],
 
-vfx:[
+VFX:[
 {
 title:"Basic VFX",
 price:"$150",

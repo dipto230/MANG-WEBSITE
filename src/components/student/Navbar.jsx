@@ -49,6 +49,22 @@ const Navbar = () => {
 
   return (
 
+<>
+{/* ================= TOP INFO BAR ================= */}
+
+<div className="w-full bg-white text-black text-sm">
+  <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between">
+
+    <span>📧 info@manguuu.com</span>
+
+    <span>📞 +91 8849501736</span>
+
+  </div>
+</div>
+
+
+{/* ================= MAIN NAVBAR ================= */}
+
 <header className="w-full bg-white border-b sticky top-0 z-50">
 
 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center gap-10">
@@ -68,12 +84,7 @@ className="w-16 cursor-pointer"
 
 <Link to="/about" className="hover:text-black">About</Link>
 <Link to="/services" className="hover:text-black">Services</Link>
-{/* <Link
-  to="/portfolio"
-  className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-md hover:scale-105 hover:shadow-lg transition"
->
-  Portfolio
-</Link> */}
+
 <Link to="/projects" className="hover:text-black">Projects</Link>
 <Link to="/pricing" className="hover:text-black">Pricing</Link>
 <Link to="/store" className="hover:text-black">Store</Link>
@@ -95,7 +106,7 @@ className="hidden lg:block w-[200px] px-4 py-2 rounded-full border outline-none 
 />
 
 
-{/* Language */}
+{/* ===== Language ===== */}
 
 <div className="relative hidden md:block">
 
@@ -130,7 +141,7 @@ className="block w-full text-left px-3 py-2 hover:bg-gray-100 text-sm"
 </div>
 
 
-{/* Educator */}
+{/* ===== Educator ===== */}
 
 {user && (
 <button
@@ -142,7 +153,7 @@ className="hidden md:block text-gray-600 hover:text-black"
 )}
 
 
-{/* User */}
+{/* ===== User ===== */}
 
 {user ? (
 
@@ -165,6 +176,7 @@ Sign In
 
 </header>
 
+</>
   )
 }
 

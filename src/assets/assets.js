@@ -68,6 +68,7 @@ import ANIMATION_DYNAMIC from './ANIMATION_DYNAMIC_3D.jpg'
 
 import official_logo_of_mangu from './OFFICIAL_LOGO_OF_MANGUUU.png'
 import navbar_logo_manguuu from './NAV_BAR_LOGO_MANGUU.png'
+import sponsor_image_nova from './sponsor_image.png'
 
 
 
@@ -82,6 +83,7 @@ import mnm from './mnm-3 (1).png'
 
 export const assets = {
     barcelon_jersey,
+    sponsor_image_nova,
     navbar_logo_manguuu,
     official_logo_of_mangu,
     VIDEO_EDITING,

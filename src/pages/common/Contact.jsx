@@ -3,6 +3,7 @@ import Footer from "../../components/student/Footer";
 
 const Contact = () => {
   return (
+    <>
     <section className="w-full bg-white py-24">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14">
         
@@ -48,8 +49,10 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      
+      </section>
       <Footer/>
-    </section>
+      </>
   );
 };
 
