@@ -49,6 +49,7 @@ const ServiceDetails = () => {
   const otherServices = services.filter((item) => item._id !== id);
 
   return (
+    <>
     <div className="max-w-6xl mx-auto px-6 py-24">
 
       {/* Back Button */}
@@ -126,7 +127,9 @@ const ServiceDetails = () => {
       </div>
           
 
-    </div>
+      </div>
+      <Footer/>
+    </>
   );
 };
 
