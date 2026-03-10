@@ -24,6 +24,8 @@ import PrivateAdminRoute from './pages/admin/PrivateAdminRoute'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import { ToastContainer, toast } from 'react-toastify'
 import ServiceDetails from './pages/common/ServiceDetails'
+import Pricing from './pages/common/Pricing'
+import Portfolio from './pages/common/Portfolio'
 
 function App() {
   const isEducatorRoute = useMatch('/educator/*')
@@ -48,7 +50,9 @@ function App() {
         <Route path="/service/:id" element={<ServiceDetails />} />
         
   <Route path="/projects" element={<Projects />} />
-  <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/portfolio" element={<Portfolio />} />
 
   <Route path='/' element={<Home />} />
   <Route path='/course-list' element={<CourseList />} />
