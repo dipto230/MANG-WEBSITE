@@ -304,7 +304,7 @@ Service Categories
 
 <div className="flex flex-col gap-3">
 
-{["web","graphic","vfx","marketing","animation"].map((cat)=>(
+{["web","graphic","VFX & 3D Modeling","marketing","animation", "videoEditing"].map((cat)=>(
 <button
 key={cat}
 onClick={()=>setCategory(cat)}
