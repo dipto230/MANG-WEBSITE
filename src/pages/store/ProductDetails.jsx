@@ -1,27 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import Footer from "../../components/student/Footer";
 
 const ProductDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
   const [product, setProduct] = useState(null);
+  const [products, setProducts] = useState([]);
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
 useEffect(() => {
-  const fetchProduct = async () => {
+  const fetchProducts = async () => {
     try {
+
       const res = await fetch(
-        `https://mang-website-redeploy.vercel.app/api/products/${id}`
+        "https://mang-website-redeploy.vercel.app/api/products"
       );
 
-      if (!res.ok) {
-        throw new Error("Product not found");
-      }
-
       const data = await res.json();
-      setProduct(data.product);
+
+      setProducts(data.products);
+
+      const foundProduct = data.products.find(
+        (item) => item._id === id
+      );
+
+      setProduct(foundProduct);
+
     } catch (err) {
       setError(err.message);
     } finally {
@@ -29,9 +37,8 @@ useEffect(() => {
     }
   };
 
-  fetchProduct();
+  fetchProducts();
 }, [id]);
-
 
   if (loading) {
     return <div className="p-10 text-xl">Loading...</div>;
@@ -51,11 +58,17 @@ useEffect(() => {
     );
   }
 
+  const relatedProducts = products.filter(
+    (item) => item._id !== id
+  );
+
   return (
+    <>
     <div className="p-10 max-w-6xl mx-auto">
+
+      {/* PRODUCT DETAILS */}
       <div className="grid md:grid-cols-2 gap-10">
 
-        {/* Product Image */}
         <div>
           <img
             src={product.image}
@@ -64,7 +77,6 @@ useEffect(() => {
           />
         </div>
 
-        {/* Product Info */}
         <div>
           <h1 className="text-4xl font-bold mb-4">{product.title}</h1>
 
@@ -102,12 +114,61 @@ useEffect(() => {
             onClick={() => navigate("/store")}
             className="ml-4 px-6 py-3 border border-black rounded"
           >
-            Back
+           Order Now
           </button>
         </div>
 
       </div>
-    </div>
+
+      {/* RELATED PRODUCTS */}
+
+      <div className="mt-24">
+
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Related Products
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {relatedProducts.slice(0,3).map((item) => (
+
+            <Link
+              key={item._id}
+              to={`/product/${item._id}`}
+              className="bg-white rounded-xl shadow hover:shadow-xl transition"
+            >
+
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-48 object-cover rounded-t-xl"
+              />
+
+              <div className="p-4">
+
+                <h3 className="font-semibold">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-600">
+                  ${item.price}
+                </p>
+
+              </div>
+
+            </Link>
+
+          ))}
+
+        </div>
+
+      </div>
+      
+
+      </div>
+      <Footer/>
+    </>
+    
   );
 };
 

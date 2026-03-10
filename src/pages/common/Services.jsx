@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/student/Footer";
+import CallToAction from "../../components/student/CallToAction";
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -125,7 +126,7 @@ const Services = () => {
               onClick={scrollLeft}
               className="absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 z-10"
             >
-              ◀
+              
             </button>
 
             {/* SLIDER */}
@@ -177,7 +178,7 @@ const Services = () => {
               onClick={scrollRight}
               className="absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full p-3 z-10"
             >
-              ▶
+   
             </button>
 
           </div>
@@ -222,6 +223,45 @@ const Services = () => {
         </div>
 
       </section>
+
+ {/* ================= MOVING TEXT ================= */}
+
+{/* ================= CROSS MOVING TEXT ================= */}
+
+<section className="py-14 bg-white overflow-hidden">
+
+  <div className="space-y-6">
+
+    {/* Row 1 */}
+    <div className="whitespace-nowrap animate-marquee-fast text-4xl font-bold">
+      <span className="mx-10 glow-text">WE BUILD LEGACY</span>
+      <span className="mx-10 glow-text">MODERN WEB SOLUTIONS</span>
+      <span className="mx-10 glow-text">CREATIVE DIGITAL EXPERIENCES</span>
+      <span className="mx-10 glow-text">MANG DIGITAL AGENCY</span>
+      <span className="mx-10 glow-text">WE BUILD LEGACY</span>
+    </div>
+
+    {/* Row 2 */}
+    <div className="whitespace-nowrap animate-marquee-reverse text-4xl font-bold">
+      <span className="mx-10 glow-text">WEB DEVELOPMENT</span>
+      <span className="mx-10 glow-text">UI UX DESIGN</span>
+      <span className="mx-10 glow-text">DIGITAL BRANDING</span>
+      <span className="mx-10 glow-text">CREATIVE STRATEGY</span>
+      <span className="mx-10 glow-text">WEB DEVELOPMENT</span>
+    </div>
+
+    {/* Row 3 */}
+    <div className="whitespace-nowrap animate-marquee-fast text-4xl font-bold">
+      <span className="mx-10 glow-text">MERN STACK DEVELOPMENT</span>
+      <span className="mx-10 glow-text">MODERN WEBSITE DESIGN</span>
+      <span className="mx-10 glow-text">STARTUP SOLUTIONS</span>
+      <span className="mx-10 glow-text">DIGITAL PRODUCTS</span>
+      <span className="mx-10 glow-text">MERN STACK DEVELOPMENT</span>
+    </div>
+
+  </div>
+
+</section>
 
       {/* ================= TESTIMONIALS ================= */}
 
@@ -337,6 +377,7 @@ const Services = () => {
         </div>
 
       </section>
+      <CallToAction/>
 
       <Footer />
 

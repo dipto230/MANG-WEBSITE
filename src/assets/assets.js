@@ -66,6 +66,10 @@ import DIGITAL_MARKETING from './DIGITAL_MARKETING.jpg'
 import ANIMATION_DYNAMIC from './ANIMATION_DYNAMIC_3D.jpg'
 
 
+import official_logo_of_mangu from './OFFICIAL_LOGO_OF_MANGUUU.png'
+import navbar_logo_manguuu from './NAV_BAR_LOGO_MANGUU.png'
+
+
 
 
 //manguu product
@@ -78,6 +82,8 @@ import mnm from './mnm-3 (1).png'
 
 export const assets = {
     barcelon_jersey,
+    navbar_logo_manguuu,
+    official_logo_of_mangu,
     VIDEO_EDITING,
     VFX_3D_MODELING,
     GRAFIC,

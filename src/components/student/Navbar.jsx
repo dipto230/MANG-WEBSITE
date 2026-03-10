@@ -51,12 +51,12 @@ const Navbar = () => {
 
 <header className="w-full bg-white border-b sticky top-0 z-50">
 
-<div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div className="max-w-7xl mx-auto px-6 py-4 flex items-center gap-10">
 
 {/* ===== Logo ===== */}
 
 <img
-src={assets.new_mookup_logo}
+src={assets.navbar_logo_manguuu}
 onClick={()=>navigate("/")}
 className="w-16 cursor-pointer"
 />
@@ -84,7 +84,7 @@ className="w-16 cursor-pointer"
 
 {/* ===== Right Side ===== */}
 
-<div className="flex items-center gap-4">
+<div className="flex items-center gap-4 ml-auto">
 
 {/* Search */}
 
