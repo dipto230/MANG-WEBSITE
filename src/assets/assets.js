@@ -59,6 +59,12 @@ import graphic_design from './woman-with-editor-occupation-wearing-headphones.jp
 
 import new_mookup_logo from './new moukup logo (1).png'
 
+import VIDEO_EDITING from './VIDEO_EDITING.jpg'
+import VFX_3D_MODELING from './VFX_3D_MODELING.webp'
+import GRAFIC from './GRAFIC_DESIGN.jpg'
+import DIGITAL_MARKETING from './DIGITAL_MARKETING.jpg'
+import ANIMATION_DYNAMIC from './ANIMATION_DYNAMIC_3D.jpg'
+
 
 
 
@@ -72,6 +78,12 @@ import mnm from './mnm-3 (1).png'
 
 export const assets = {
     barcelon_jersey,
+    VIDEO_EDITING,
+    VFX_3D_MODELING,
+    GRAFIC,
+    DIGITAL_MARKETING,
+    ANIMATION_DYNAMIC,
+
     mnm,
     new_mookup_logo,
     mang_jersey,
@@ -805,6 +817,63 @@ export const dummyCourses = [
         "courseThumbnail": "https://i.ibb.co/kVpYtvxk/kyle-loftus-3-Uc-Qt-XSv-A88-unsplash.jpg"
     }
 ]
+
+// export const dummyServices = [
+//   {
+//     id: "s1",
+//     title: "Web Development",
+//     shortDesc: "Modern and responsive websites.",
+//     fullDesc:
+//       "I build fast, responsive, and scalable websites using modern technologies like React, Next.js, Node.js, and MongoDB. My focus is clean UI, optimized performance, and great user experience.",
+//     image: assets.VFX_3D_MODELING,
+//   },
+//   {
+//     id: "s2",
+//     title: "Graphic Design",
+//     shortDesc: "Creative visual designs for brands.",
+//     fullDesc:
+//       "Professional graphic design services including logo design, social media creatives, posters, banners, thumbnails, and brand identity that visually communicate your business message.",
+//     image: assets.GRAFIC,
+//   },
+//   {
+//     id: "s3",
+//     title: "VFX & 3D Modeling",
+//     shortDesc: "High-quality visual effects and 3D assets.",
+//     fullDesc:
+//       "I create cinematic VFX effects and detailed 3D models for films, games, advertisements, and digital content using modern tools and workflows.",
+//     image: assets.VFX_3D_MODELING,
+//   },
+//   {
+//     id: "s4",
+//     title: "Digital Marketing",
+//     shortDesc: "Grow your business online.",
+//     fullDesc:
+//       "Complete digital marketing services including SEO optimization, social media marketing, content marketing, and ad campaign management to increase brand visibility and conversions.",
+//     image: assets.DIGITAL_MARKETING,
+//   },
+//   {
+//     id: "s5",
+//     title: "Animation",
+//     shortDesc: "Creative 2D & 3D animation.",
+//     fullDesc:
+//       "Professional animation services for explainer videos, brand storytelling, advertisements, and social media content using modern animation techniques.",
+//     image: assets.VIDEO_EDITING,
+//   },
+// //   {
+// //     id: "s6",
+// //     title: "3D Designing",
+// //     shortDesc: "Professional 3D design solutions.",
+// //     fullDesc:
+// //       "I create high-quality 3D designs for products, architecture, branding visuals, and digital experiences with realistic rendering and modern design workflows.",
+// //     image: assets.Hero_photo,
+// //   },
+// ];
+
+
+
+
+
+
 export const dummyProjects = [
   {
     id: "p1",
@@ -850,7 +919,7 @@ export const dummyServices = [
     shortDesc: "Professional video editing for reels, ads, and films.",
     fullDesc:
       "I provide high-quality video editing services including cinematic cuts, color grading, motion graphics, sound design, and platform-optimized exports for YouTube, Instagram, and ads.",
-    image: "https://i.ibb.co/LXGzVRDy/sanjeev-nagaraj-u4bv-BOOp-ZB4-unsplash.jpg",
+    image: assets.VIDEO_EDITING,
   },
   {
     id: "s2",
@@ -858,7 +927,7 @@ export const dummyServices = [
     shortDesc: "Creative visuals that communicate your brand.",
     fullDesc:
       "From logos and branding to social media creatives, posters, and thumbnails, I design visuals that align with your brand identity and marketing goals.",
-    image: assets.graphic_design
+    image: assets.GRAFIC
   },
   {
     id: "s3",
@@ -866,16 +935,16 @@ export const dummyServices = [
     shortDesc: "Modern, fast, and scalable websites.",
     fullDesc:
       "I build responsive and performant websites using React, Next.js, and modern backend technologies with clean UI, optimized SEO, and smooth UX.",
-    image: assets.web_dev_3,
+    image: assets.VFX_3D_MODELING,
   },
-//   {
-//     id: "s4",
-//     title: "Digital Marketing",
-//     shortDesc: "Grow your brand with smart marketing.",
-//     fullDesc:
-//       "I help businesses grow through SEO, social media marketing, paid ads, analytics, and content strategy focused on real conversions.",
-//     image: assets.service_marketing,
-//   },
+  {
+    id: "s4",
+    title: "Digital Marketing",
+    shortDesc: "Grow your brand with smart marketing.",
+    fullDesc:
+      "I help businesses grow through SEO, social media marketing, paid ads, analytics, and content strategy focused on real conversions.",
+    image: assets.DIGITAL_MARKETING,
+  },
 //   {
 //     id: "s5",
 //     title: "Photography",
