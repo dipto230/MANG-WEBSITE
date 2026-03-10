@@ -3,6 +3,7 @@ import Footer from "../../components/student/Footer";
 
 const About = () => {
   return (
+    <>
     <section className="w-full bg-white py-24">
       <div className="max-w-6xl mx-auto px-6 text-center">
         
@@ -64,9 +65,11 @@ const About = () => {
         </div>
       </div>
       <div className="mt-5">
-         <Footer/>
+         
         </div>
-    </section>
+      </section>
+      <Footer/>
+      </>
  
   );
 };
