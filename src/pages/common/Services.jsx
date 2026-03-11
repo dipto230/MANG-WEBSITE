@@ -9,6 +9,7 @@ const Services = () => {
 
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showExchange, setShowExchange] = useState(false);
 
   const navigate = useNavigate();
 
@@ -152,6 +153,73 @@ View Details →
 </div>
 
 </section>
+
+
+      
+{/* ===== EXCHANGE SLIDE WIDGET ===== */}
+
+<div className="fixed bottom-6 right-0 z-50 flex items-end">
+
+  {/* Toggle Button */}
+  <button
+    onClick={() => setShowExchange(!showExchange)}
+    className="bg-green-600 text-white px-3 py-3 rounded-l-lg shadow-lg hover:bg-green-700 transition"
+  >
+    💱
+  </button>
+
+  {/* Slide Box */}
+  <div
+    className={`bg-green-500 text-white p-5 w-[300px] rounded-l-2xl shadow-2xl transform transition-transform duration-300 ${
+      showExchange ? "translate-x-0" : "translate-x-full"
+    }`}
+  >
+    
+    {/* Close Button */}
+    <button
+      onClick={() => setShowExchange(false)}
+      className="absolute top-2 right-3 text-white text-lg"
+    >
+      ✕
+    </button>
+
+    {/* Logo */}
+    <div className="flex justify-center mb-3">
+      <img
+        src={assets.sponsor_image_nova}
+        alt="exchange logo"
+        className="h-12 object-contain"
+      />
+    </div>
+
+    <p className="font-bold text-sm text-center mb-2">
+      💱 Special Exchange Offer
+    </p>
+
+    <div className="text-xs space-y-1">
+      <p>Get the Best Market Rate for TK ➜ INR (Rs)</p>
+      <p>✅ Fast & Secure Transactions</p>
+      <p>✅ Best Exchange Rates Available</p>
+      <p>✅ TK to INR Exchange</p>
+      <p>✅ All International Transactions Supported</p>
+      <p>✅ Reliable & Trusted Service</p>
+    </div>
+
+    <a
+      href="https://wa.me/918849501736?text=Hello%20I%20want%20to%20exchange%20TK%20to%20INR"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-center mt-4 bg-white text-green-600 py-2 rounded-lg font-medium"
+    >
+      Chat on WhatsApp
+    </a>
+  </div>
+</div>
+
+      
+
+
+
 
 
 {/* ================= TRUSTED BRANDS ================= */}

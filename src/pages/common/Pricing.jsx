@@ -270,7 +270,54 @@ animation:[
 
 
 
+  ],
+
+  videoEditing:[
+{
+title:"Basic Video Editing",
+price:"$80",
+features:[
+"Basic video cutting & trimming",
+"Simple transitions",
+"Background music integration",
+"Basic color correction",
+"Text titles & captions",
+"Social media video formatting",
+"HD 1080p export"
 ]
+},
+
+{
+title:"Professional Video Editing",
+price:"$250+",
+features:[
+"Advanced video editing",
+"Professional transitions",
+"Color grading & correction",
+"Sound design & audio cleanup",
+"Motion graphics & animated titles",
+"Subtitles & captions",
+"YouTube / social media optimization",
+"4K Ultra HD export"
+]
+},
+
+{
+title:"Premium Video Production",
+price:"$700+",
+features:[
+"High-end cinematic editing",
+"Advanced color grading",
+"Visual effects & motion graphics",
+"Multi-camera editing",
+"Professional sound design",
+"Custom animated titles & graphics",
+"Storytelling style editing",
+"YouTube / Ads optimization",
+"Cinema quality 4K / 6K export"
+]
+}
+],
 
 };
 
