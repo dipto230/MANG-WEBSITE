@@ -17,7 +17,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-gray-600 text-lg leading-relaxed">
-              At <span className="font-semibold">MANGUU</span>, we turn{' '}
+              At <span className="font-semibold">MANGUUU</span>, we turn{' '}
               <span className="underline font-medium">
                 bold business ideas
               </span>{' '}

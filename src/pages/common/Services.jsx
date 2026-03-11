@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../../components/student/Footer";
 import CallToAction from "../../components/student/CallToAction";
 import { assets } from "../../assets/assets";
+import TestimonialsSection from "../../components/student/TestimonialsSection";
+import LegacyInquirySection from "./LegacyInquirySection";
+import AboutPreview from "./AboutPreview";
+import ContactPreview from "./ContactPreview";
 
 const Services = () => {
 
@@ -167,7 +171,7 @@ View Details →
       onClick={() => setShowExchange(true)}
       className="bg-green-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-700 transition"
     >
-      💱 Exchange
+      💱Currency Exchange
     </button>
   )}
 
@@ -298,7 +302,11 @@ Trusted by Leading Brands
 
 </section>
 
-<CallToAction/>
+      <CallToAction />
+      <TestimonialsSection />
+      <LegacyInquirySection />
+      <AboutPreview />
+      <ContactPreview/>
 
 <Footer/>
 

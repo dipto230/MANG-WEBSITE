@@ -55,9 +55,9 @@ const Navbar = () => {
 <div className="w-full bg-white text-black text-sm">
   <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between">
 
-    <span>📧 info@manguuu.com</span>
+    <span className="font-semibold text-blue-500">📧 info@manguuu.com</span>
 
-    <span>📞 +91 8849501736</span>
+    <span className="font-semibold text-blue-500">📞 +91 8849501736</span>
 
   </div>
 </div>

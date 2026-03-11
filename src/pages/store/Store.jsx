@@ -11,6 +11,8 @@ const Store = () => {
       .then(data => setProducts(data.products));
   }, []);
 
+
+
   return (
     <>
     <div className="p-10">

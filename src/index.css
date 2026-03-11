@@ -38,7 +38,7 @@
 
 .animate-marquee-fast {
   display: inline-block;
-  animation: marqueeFast 5s linear infinite;
+  animation: marqueeFast 7s linear infinite;
 }
 
 
@@ -55,7 +55,7 @@
 
 .animate-marquee-reverse {
   display: inline-block;
-  animation: marqueeReverse 5s linear infinite;
+  animation: marqueeReverse 7s linear infinite;
 }
 
 
